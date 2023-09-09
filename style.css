@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow: hidden;
+    perspective: 500px;
+}
+#background{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f6f6;
+    transition: all cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s;
+}
+#nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+#heading{
+    margin-top: 60px;
+    text-align: center;
+}
+#heading h1{
+    font-size: 50px;
+}
+#heading p{
+    font-size: small;
+}
+#elements{
+    margin-top: 100px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+#elements .element{
+    width: 25%;
+    height: 350px;
+   background-color: #f1e5df;
+   
+}
+.element .pic{
+    width: 98%;
+    height: 70%;
+    background-color: bisque;
+    margin: 2px 2px;
+}
+img{
+    height:250px;
+    width: 280px;
+}
+.element h4{
+    margin-top: 10px;
+    font-size: 2vh;
+    text-align: center;
+}
+.element h3{
+    color: rgb(111, 108, 108);
+    text-align: center;
+}
+#sidebar{
+    display: flex;
+    width: 250px;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translate(0,-50%);
+    transition: all ease-in-out 0.5s;
+}
+#sidebar i{
+    color: #aba7a7;
+    margin-right: 10px;
+    margin-top: 2px;
+}
+#sidebar a{
+    display: block;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #777;
+}
+#sidebar a:hover{
+    color: black;
+}
+#sidebar h4{
+    margin-bottom: 30px;
+}
+#close{
+    transition: all ease-in 0.5s;
+} 
+
